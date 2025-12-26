@@ -1,0 +1,48 @@
+{
+    "xcode-clang": {
+        "compilers": {
+            "C": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc",
+            "CXX": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++"
+        },
+        "query_driver" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+        "generator": "Xcode",
+        "build_type_aware": false
+    },
+    "clang": {
+        "compilers": {
+            "C": "/usr/bin/clang",
+            "CXX": "/usr/bin/clang++"
+        },
+        "cmake_usr_args": {
+            "CMAKE_CXX_FLAGS": "-stdlib=libc++"
+        },
+        "query_driver" : "/usr/bin/clang++",
+        "generator": "Ninja"
+    },
+    "clang-xcode-13.4.1": {
+        "compilers": {
+            "C": "/usr/bin/clang",
+            "CXX": "/usr/bin/clang++"
+        },
+        "query_driver" : "/usr/bin/clang++",
+        "environment_variables": {
+            "DEVELOPER_DIR": "/Applications/xcode-versions/Xcode-13.4.1.app/Contents/Developer"
+        },
+        "generator": "Ninja"
+    },
+    "emscripten-3.1.17": {
+        "toolchain_file": "~/.conan/data/emsdk_installer/3.1.17/microblink/stable/package/3c9d8fb1b383ce27cf8b0942dcbdbb6add8cbee9/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
+        "environment_variables": {
+            "EM_CONFIG": "/Users/dodo/.conan/data/emsdk_installer/3.1.17/microblink/stable/package/3c9d8fb1b383ce27cf8b0942dcbdbb6add8cbee9/.emscripten",
+            "EM_CACHE": "/Users/dodo/.conan/data/emsdk_installer/3.1.17/microblink/stable/package/3c9d8fb1b383ce27cf8b0942dcbdbb6add8cbee9/.emscripten_cache"
+        },
+        "cmake_usr_args": {
+            "MY_EMSCRIPTEN_EMRUN_BROWSER": "chrome",
+            "MY_EMSCRIPTEN_EMRUN_SILENCE_TIMEOUT": "300",
+            "MY_EMSCRIPTEN_EMRUN_SERVE_AFTER_CLOSE": "ON",
+            "MY_EMSCRIPTEN_EMRUN_BROWSER_ARGS": "--remote-debugging-port=9622"
+        },
+        "query_driver" : "~/.conan/data/emsdk_installer/3.1.17/microblink/stable/package/3c9d8fb1b383ce27cf8b0942dcbdbb6add8cbee9/upstream/emscripten/em++",
+        "generator": "Ninja"
+    }
+}
