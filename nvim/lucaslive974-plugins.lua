@@ -81,6 +81,19 @@ return {
     event = "VeryLazy",
   },
 
+  {
+    "kylechui/nvim-surround",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup()
+    end,
+  },
+
+  {
+    "OXY2DEV/markview.nvim",
+    event = "VeryLazy",
+    ft = "markdown",
+  },
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
