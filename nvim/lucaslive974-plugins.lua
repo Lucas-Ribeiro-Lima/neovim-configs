@@ -49,6 +49,9 @@ return {
 				"clang-format",
 				"codelldb",
 				"cmake-language-server",
+        "typescript-language-server",
+        "basedpyright",
+        "pylint"
 			},
 		},
 	},
