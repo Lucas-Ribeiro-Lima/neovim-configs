@@ -50,6 +50,7 @@ return {
 				"codelldb",
 				"cmake-language-server",
         "typescript-language-server",
+        "tailwindcss-language-server",
         "basedpyright",
         "pylint"
 			},
