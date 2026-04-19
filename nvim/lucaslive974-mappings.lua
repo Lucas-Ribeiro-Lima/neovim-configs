@@ -25,6 +25,7 @@ map("n", "<leader>cb", [[:Task start cmake build<cr>]], { silent = true })
 map("n", "<leader>cB", [[:Task start cmake build_all<cr>]], { silent = true })
 map("n", "<leader>cP", [[:Task start cmake reconfigure<cr>]], { silent = true })
 map("n", "<leader>ct", [[:Task set_module_param cmake target<cr>]], { silent = true })
+map("n", "<leader>cT", [[:Task start cmake ctest<cr>]], { silent = true })
 map("n", "<leader><leader>", "<CR>", {})
 
 map("n", "<leader>df", vim.diagnostic.open_float, {
