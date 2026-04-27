@@ -71,7 +71,7 @@ return {
 
 	{
 		"stevearc/conform.nvim",
-		-- event = 'BufWritePre', -- uncomment for format on save
+		event = 'BufWritePre', -- uncomment for format on save
 		opts = require("configs.conform"),
 	},
 
@@ -169,6 +169,10 @@ return {
 		},
 	},
 
+	{
+		"HiPhish/debugpy.nvim",
+		event = "VeryLazy",
+	},
 	-- test new blink
 	-- { import = "nvchad.blink.lazyspec" },
 
